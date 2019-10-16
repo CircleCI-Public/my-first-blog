@@ -1,0 +1,22 @@
+version: 2.1
+# define the executor to use docker
+executors:
+  my-primary-image:
+    docker: 
+      - image: circleci/python:"latest"
+# start defining our jobs 
+jobs:
+# first job is to build
+  build:
+    executor: my-primary-image
+    # list the steps you want to run
+    steps:
+      - run: echo this completes the build job
+
+      
+
+
+    
+      
+
+        
