@@ -3,7 +3,7 @@ version: 2.1
 executors:
   my-primary-image:
     docker: 
-      - image: circleci/python:"latest"
+      - image: circleci/python:latest
 # start defining our jobs 
 jobs:
 # first job is to build
@@ -13,7 +13,7 @@ jobs:
     steps:
       - run: echo this completes the build job
 
-      
+
 
 
     
