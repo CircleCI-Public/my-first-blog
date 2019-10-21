@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
+from .forms import forms
 
 # Create your models here.
 # this line defines our model (it is an object)
