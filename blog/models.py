@@ -8,8 +8,6 @@ from django.utils import timezone
 # this line defines our model (it is an object)
 class Post(models.Model):
 	# ForeignKey this is a link to another model
-	# author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-	# CharField this is how you define text with a limited number of characters
 	title = models.CharField(max_length=200)
 	# TextField this is for long text without a limit
 	text = models.TextField()

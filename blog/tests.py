@@ -1,6 +1,5 @@
 from django.test import TestCase
 
-from django.contrib.auth.models import AnonymousUser
 from django.test import RequestFactory, TestCase
 
 # check models
