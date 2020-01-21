@@ -1,15 +1,36 @@
 version: 2.1
 # define the executor to use docker
-executors:
-  my-primary-image:
-    docker: 
-      - image: circleci/python:latest
-# start defining our jobs 
+orbs:
+  python: circleci/python@0.2.1
+
 jobs:
-# first job is to build
   build:
-    executor: my-primary-image
-    # list the steps you want to run
+    executor: python/default
     steps:
-      - run: echo this completes the build job
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+#      - run:
+#          command: |
+#            # pytest would be a dep in requirements.txt
+#            pytest
+#          name: Test
+
+workflows:
+  main:
+    jobs:
+      - build
+#executors:
+#  my-primary-image:
+#    docker:
+#      - image: circleci/python:latest
+## start defining our jobs
+#jobs:
+## first job is to build
+#  build:
+#    executor: my-primary-image
+#    # list the steps you want to run
+#    steps:
+#      - run: echo this completes the build job
 
