@@ -1,5 +1,5 @@
 version: 2.1
-# define the executor to use docker
+
 orbs:
   python: circleci/python@0.2.1
 
@@ -12,23 +12,11 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ~/manage.py test
+          command: ./manage.py test
           name: Test
 
 workflows:
   main:
     jobs:
       - build-and-test
-#executors:
-#  my-primary-image:
-#    docker:
-#      - image: circleci/python:latest
-## start defining our jobs
-#jobs:
-## first job is to build
-#  build:
-#    executor: my-primary-image
-#    # list the steps you want to run
-#    steps:
-#      - run: echo this completes the build job
 
