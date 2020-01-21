@@ -4,23 +4,21 @@ orbs:
   python: circleci/python@0.2.1
 
 jobs:
-  build:
+  build-and-test:
     executor: python/default
     steps:
       - checkout
       - python/load-cache
       - python/install-deps
       - python/save-cache
-#      - run:
-#          command: |
-#            # pytest would be a dep in requirements.txt
-#            pytest
-#          name: Test
+      - run:
+          command: ~/manage.py test
+          name: Test
 
 workflows:
   main:
     jobs:
-      - build
+      - build-and-test
 #executors:
 #  my-primary-image:
 #    docker:
