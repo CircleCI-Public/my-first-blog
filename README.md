@@ -38,8 +38,13 @@ workflows:
     jobs:
       - build-and-test
 ```
+
 This config uses the language-specific orb to replace any executors, build tools, and commands available. 
+
 Here we are using the [python orb](https://circleci.com/orbs/registry/orb/circleci/python), which works with the pip cache on CircleCI to speed up builds. 
+
 The `python/load-cache` command loads cached pip packages.
+
 The `python/install-deps` command saves pip packages to cache.
+
 The parameters of this command can be customized. See the docs for more information.
