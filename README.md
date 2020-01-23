@@ -3,12 +3,11 @@
 
 [![CircleCI](https://circleci.com/gh/bebekhan/my-first-blog.svg?style=svg)](https://circleci.com/gh/bebekhan/my-first-blog)
 
-This is an example application showcasing how to run a Java app on CircleCI 2.1. This application uses the [Spring PetClinic sample project](https://projects.spring.io/spring-petclinic/).
-This readme includes pared down sample configs for different CircleCI features, including workspace, dependency caching, and parallelism.
+This is an example application showcasing how to run a Python Django app on CircleCI 2.1. 
 
-To see how these steps would be configured in a 2.0 config, please check out the [master branch](#UPDATE LINK).
+<!-- To see how these steps would be configured in a 2.0 config, please check out the [master branch](#UPDATE LINK). -->
 
-To see these features in a version 2.1 config with reusable commands and running on different executors, please see the [2.1-simplified-config branch](#UPDATE_LINK).
+<!-- To see these features in a version 2.1 config with reusable commands and running on different executors, please see the [2.1-simplified-config branch](#UPDATE_LINK). -->
 
 
 ## Sample configurations: version 2.1
