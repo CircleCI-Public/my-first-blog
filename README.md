@@ -3,7 +3,7 @@ Create a local virtual environment with `virtualenv` and install the dependencie
 
 ### Ensure you are using Python version 3
 python3 --version  
- I am running in venv is Python 3.8.2
+ I have running in venv Python 3.8.2
 ### Once you're in that virtualenv run 
 pip install -r requirements.txt
 ### Migrate database by running
