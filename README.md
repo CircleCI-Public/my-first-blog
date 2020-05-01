@@ -12,3 +12,14 @@ python manage.py migrate
 python manage.py runserver
   #### Starting development server:
    http://127.0.0.1:8000/
+
+For the language guide tutorial, see https://circleci.com/docs/2.0/language-python/
+
+# Configuring a Python Application on CircleCI
+
+[This document](https://circleci.com/docs/2.0/language-python/) describes how to configure CircleCI using a sample application written in Python.
+## Overview
+
+This guide uses this sample Django application to describe configuration best practices for Python applications building on CircleCI. The application is hosted on GitHub and is building on CircleCI.
+
+Consider forking the repository and rewriting the configuration file as you follow this guide.
