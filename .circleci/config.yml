@@ -10,10 +10,10 @@ jobs:
       - checkout
       - python/load-cache
       - python/install-deps
-      - run:
-          name: Test
-          command: ./manage.py test
       - python/save-cache
+      - run:
+          command: ./manage.py test
+          name: Test
 
 workflows:
   main:
